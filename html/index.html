@@ -4,21 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pixel Notes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Notepad UI -->
     <div id="notepad" class="hidden">
         <div class="notepad-header">
-            <h2>Pixel Notes</h2>
-            <button id="closeBtn">×</button>
+            <h2>Notepad</h2>
+            <button id="closeBtn" class="btn-close">×</button>
         </div>
         <div class="notepad-content">
-            <textarea id="noteText" placeholder="Write your notes here..."></textarea>
+            <textarea id="noteText" placeholder="Write your note here..."></textarea>
         </div>
         <div class="notepad-footer">
-            <button id="saveBtn">Save</button>
+            <button id="saveBtn" class="btn-save">Save</button>
         </div>
     </div>
+
+    <!-- Note View UI -->
+    <div id="noteView" class="hidden">
+        <div class="note-header">
+            <h2>Note</h2>
+            <button id="closeNoteBtn" class="btn-close">×</button>
+        </div>
+        <div class="note-content">
+            <div id="noteContent"></div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html> 
